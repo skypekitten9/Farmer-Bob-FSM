@@ -5,8 +5,8 @@ class State
 public:
 	virtual void Enter();
 	virtual void Exit();
-	virtual void Update(int t);
+	virtual void Update();
 	virtual void Init();
-	virtual void CheckTransitions(int t);
+	virtual void CheckTransitions();
 };
 

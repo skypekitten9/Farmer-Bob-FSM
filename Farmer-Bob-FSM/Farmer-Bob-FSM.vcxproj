@@ -152,12 +152,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Farmer-Bob-FSM.cpp" />
+    <ClCompile Include="HarvestState.cpp" />
     <ClCompile Include="Machine.cpp" />
+    <ClCompile Include="PlantState.cpp" />
     <ClCompile Include="State.cpp" />
+    <ClCompile Include="WaitState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HarvestState.h" />
     <ClInclude Include="Machine.h" />
+    <ClInclude Include="PlantState.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="WaitState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
