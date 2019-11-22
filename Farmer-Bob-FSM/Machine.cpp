@@ -3,6 +3,7 @@
 Machine::Machine(State* state) : currentState(state)
 {
 	currentState->SetMachine(this);
+	currentState->Enter();
 }
 
 void Machine::TransitionToState(State* state)

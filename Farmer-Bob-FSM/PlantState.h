@@ -5,6 +5,8 @@ class PlantState :
 	public State
 {
 public:
+	void Enter() override;
+	void Exit() override;
 	void Update() override;
 };
 
