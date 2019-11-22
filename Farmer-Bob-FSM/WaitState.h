@@ -3,5 +3,6 @@
 class WaitState :
 	public State
 {
+
 };
 
