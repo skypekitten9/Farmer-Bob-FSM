@@ -159,6 +159,7 @@
     <ClCompile Include="WaitState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ForwardDeclarations.h" />
     <ClInclude Include="HarvestState.h" />
     <ClInclude Include="Machine.h" />
     <ClInclude Include="PlantState.h" />

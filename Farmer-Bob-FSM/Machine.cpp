@@ -18,3 +18,8 @@ void Machine::Update()
 {
 	currentState->Update();
 }
+
+Machine::~Machine()
+{
+	delete currentState;
+}

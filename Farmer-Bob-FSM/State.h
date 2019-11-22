@@ -1,19 +1,18 @@
 #pragma once
 #include <ctime>
+#include "ForwardDeclarations.h"
 #include "Machine.h"
 class State
 {
 	//Data
-private:
-	clock_t timerStart, currentTime;
 protected:
-	const Machine* machine;
+	clock_t timerStart = clock(), currentTime = clock();
+	Machine* machine = nullptr;
 
 	//Functions
-private:
-	State() = delete;
 public:
-	void SetMachine(const Machine* achine);
+	void SetMachine(Machine* machine);
+	virtual ~State();
 	virtual void Enter();
 	virtual void Exit();
 	virtual void Update();
