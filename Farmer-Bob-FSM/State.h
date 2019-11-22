@@ -9,15 +9,13 @@ private:
 protected:
 	const Machine* machine;
 
-	//Methods
+	//Functions
 private:
 	State() = delete;
 public:
 	void SetMachine(const Machine* achine);
-	virtual void Enter() = 0;
-	virtual void Exit() = 0;
+	virtual void Enter();
+	virtual void Exit();
 	virtual void Update();
-	virtual void Init() = 0;
-	virtual void CheckTransitions() = 0;
 };
 
