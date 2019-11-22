@@ -11,7 +11,6 @@ void Machine::TransitionToState(State* state)
 	currentState = state;
 	currentState->SetMachine(this);
 	currentState->Enter();
-
 }
 
 void Machine::Update()
