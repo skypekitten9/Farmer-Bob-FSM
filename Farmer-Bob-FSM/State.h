@@ -1,6 +1,8 @@
 #pragma once
+#include <ctime>
 class State
 {
+	clock_t timerStart, currentTime;
 	State() = delete;
 public:
 	virtual void Enter();
