@@ -2,6 +2,8 @@
 #include "Machine.h"
 #include "PlantState.h"
 #include <ctime>
+#include <thread>  
+#include <chrono> 
 
 int main()
 {
@@ -10,5 +12,6 @@ int main()
 	while (true)
 	{
 		machine.Update();
+		std::this_thread::sleep_for(std::chrono::seconds(1));
 	}
 }

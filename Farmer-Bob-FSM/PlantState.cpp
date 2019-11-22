@@ -10,7 +10,7 @@ void PlantState::Enter()
 
 void PlantState::Exit()
 {
-	std::cout << "Wow, the field is already full! Talk about hard work!\n";
+	std::cout << "Wow, the field is already full! Talk about hard work!\n\n";
 	State::Exit();
 }
 
