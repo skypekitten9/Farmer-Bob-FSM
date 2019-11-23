@@ -15,7 +15,7 @@ void WaitState::Enter()
 
 void WaitState::Exit()
 {
-	std::cout << "Oh boy! The wait is finally over!\n\n";
+	std::cout << "Hurray! The wait is finally over!\n\n";
 	State::Exit();
 }
 
